@@ -47,7 +47,7 @@
   display: block;
   position: absolute;
   height: auto;
-  width: 47.2%;
+  width: 52%;
   left: 12.5%;
   bottom: 6.46%;
   /**/
@@ -87,6 +87,9 @@
   .s-promo-v1 > img.button,
   .s-promo-v1 > img.text-group {
     left: 6.25%;
+  }
+  .s-promo-v1 > img.button {
+    width: 60%;
   }
   .s-promo-v1 > img.author-badge {
     right: 6.25%;
