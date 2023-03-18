@@ -1,0 +1,193 @@
+.s-promo-v0 {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: #F0ECD3;
+}
+.s-promo-v0 > .inner {
+  position: relative;
+  width: 1280px;
+  height: 890px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.s-promo-v0 > .inner > .cover {
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -320px;
+} 
+
+.s-promo-v0 > .inner > .descriptors {
+  position: absolute;
+  top: 64px;
+  left: 0;
+}
+.s-promo-v0 > .inner > .descriptors > img {
+  display: block;
+}
+
+.s-promo-v0 > .inner > .title-group {
+  position: absolute;
+  top: 254px;
+  left: 0;
+}
+.s-promo-v0 > .inner > .title-group > img {
+  display: block;
+}
+
+.s-promo-v0 > .inner > .author-badge {
+  position: absolute;
+  top: 64px;
+  left: 570px;
+}
+.s-promo-v0 > .inner > .author-badge img:hover {
+  transform: translateY(-8px);
+}
+.s-promo-v0 > .inner > .author-badge > img {
+  display: block;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.s-promo-v0 > .inner > .slider {
+  position: absolute;
+  top: 501px;
+  left: 0;
+}
+.s-promo-v0 > .inner > .slider > .head {
+  width: 640px;
+  height: 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.s-promo-v0 > .inner > .slider > .head > .title > img {
+  display: block;
+}
+.s-promo-v0 > .inner > .slider > .head > .pagination {
+  padding-right: 16px;
+  padding-left: 16px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.s-promo-v0 > .inner > .slider > .head > .pagination > .current {
+  /**/
+}
+.s-promo-v0 > .inner > .slider > .head > .pagination > .total {
+  font-size: 12px;
+}
+.s-promo-v0 > .inner > .slider > .head > .navigation {
+  display: flex;
+  flex-direction: row;
+}
+.s-promo-v0 > .inner > .slider > .head > .navigation img {
+  display: block;
+  margin-left: 8px;
+  cursor: pointer;
+  transition: all .3s;
+}
+.s-promo-v0 > .inner > .slider > .head > .navigation img:hover {
+  opacity: .64;
+}
+.s-promo-v0 > .inner > .slider > .list {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  transition: all .3s;
+  left: 0;
+}
+.s-promo-v0 > .inner > .slider > .list.v-960 {
+  display: none;
+}
+.s-promo-v0 > .inner > .slider > .list > .item {
+  margin-right: 24px;
+}
+
+.s-promo-v0 > .inner > .menu {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  top: 757px;
+  left: 0;
+}
+.s-promo-v0 > .inner > .menu > img {
+  display: block;
+  position: relative;
+}
+.s-promo-v0 > .inner > .menu > img.button {
+  cursor: pointer;
+  box-shadow: 0 16px 32px rgba(182, 174, 125, .56);
+  border-radius: 16px;
+  transition: all .3s;
+}
+.s-promo-v0 > .inner > .menu > img.button:hover {
+  box-shadow: 0 0 32px rgba(182, 174, 125, .56);
+  transform: translateY(-4px);
+}
+.s-promo-v0 > .inner > .menu > img.button:active {
+  box-shadow: 0 -8px 32px rgba(182, 174, 125, .56);
+}
+
+.s-promo-v0 > .inner > .menu > img.link {
+  position: relative;
+  cursor: pointer;
+  padding-bottom: 6px;
+  margin-left: 64px;
+  border-bottom: 2px solid rgba(52, 52, 52, .12);
+  transition: all .3s;
+}
+.s-promo-v0 > .inner > .menu > img.link:hover {
+  border-bottom-color: rgba(52, 52, 52, .32);
+}
+
+.s-promo-v0 > .inner > .menu > img.arrow {
+  display: block;
+  position: absolute;
+  left: 260px;
+  top: -90px;
+}
+
+/* 1344-960 */
+@media (max-width: 1344px) {
+  .s-promo-v0 > .inner {
+    max-width: 960px;
+    height: 792px;
+  }
+  .s-promo-v0 > .inner > .cover {
+    width: 720px;
+    right: -240px;
+  }
+  .s-promo-v0 > .inner > .author-badge {
+    left: 432px;
+    top: 56px;
+  }
+  .s-promo-v0 > .inner > .author-badge > img {
+    width: 112px;
+  }
+  .s-promo-v0 > .inner > .title-group {
+    top: 200px;
+  }
+  .s-promo-v0 > .inner > .slider {
+    top: 431px;
+  }
+  .s-promo-v0 > .inner > .slider > .list.v-full {
+    display: none;
+  }
+  .s-promo-v0 > .inner > .slider > .list.v-960 {
+    display: flex;
+  }
+  .s-promo-v0 > .inner > .menu {
+    top: 672px;
+  }
+}
+
+/* 1024-512 */
+@media (max-width: 1024px) {
+  .s-promo-v0 {
+    display: none;
+  }
+}

@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap');
+
+/* sections */
+@import url('sections/promo-v0/style.css');
+@import url('sections/promo-v1/style.css');
+@import url('sections/program-v0/style.css');
+@import url('sections/features-v0/style.css');
+@import url('sections/author-v0/style.css');
+@import url('sections/author-v1/style.css');
+@import url('sections/testimonials-v0/style.css');
+@import url('sections/button-row-v0/style.css');
+@import url('sections/footer-v0/style.css');
+@import url('sections/modal-v0/style.css');
+
+/* root */
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+html > body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  height: auto;
+  margin: inherit;
+  padding: inherit;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  font-family: 'Mulish', Arial, Helvetica, sans-serif;
+  color: #343434;
+  background-color: #B7B39A;
+}
+
+html > body.v-modal {
+  overflow: hidden;
+}
+
+/* common */
+button::-moz-focus-inner {
+  border: 0;
+}
+
+[v-cloak] {
+  display: none;
+}

@@ -1,0 +1,100 @@
+.s-program-v0 {
+  width: 100%;
+  background-color: #F0ECD3;
+}
+
+.s-program-v0 > .inner {
+  position: relative;
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.s-program-v0 > .inner > img.text-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 64px;
+  height: auto;
+}
+
+.s-program-v0 > .inner > .list {
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.s-program-v0 > .inner > .list img {
+  display: block;
+  margin: 12px;
+  border-radius: .92rem;
+}
+.s-program-v0 > .inner > .list img.button {
+  cursor: pointer;
+  transition: all .3s;
+}
+.s-program-v0 > .inner > .list img.button:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(182, 174, 125, .56);
+}
+
+/* 1344-960 */
+@media (max-width: 1344px) {
+  .s-program-v0 > .inner {
+    position: relative;
+    width: 960px;
+  }
+  .s-program-v0 > .inner > img.text-group {
+    top: 5.73%;
+  }
+  .s-program-v0 > .inner > .list {
+    width: 776px;
+  }
+  .s-program-v0 > .inner > .list {
+    top: 18.49%;
+  }
+}
+
+/* 1024-512 */
+@media (max-width: 1024px) {
+  .s-program-v0 {
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s-program-v0 > .inner {
+    width: 100%;
+    max-width: 448px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding-top: 8px;
+    padding-bottom: 32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    height: auto;
+  }
+  .s-program-v0 > .inner > .list {
+    width: 100%;
+    display: block;
+  }
+  .s-program-v0 > .inner > img.text-group {
+    width: 100%;
+    margin-bottom: 32px;
+  }
+  .s-program-v0 > .inner > .list img {
+    margin: 0;
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .s-program-v0 > .inner > .list img:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,94 @@
+.s-promo-v1 {
+  display: none;
+  position: relative;
+  width: 100%;
+  max-width: 512px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #F0ECD3;
+}
+
+.s-promo-v1 > img.base {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.s-promo-v1 > img.descriptors {
+  display: block;
+  position: absolute;
+  height: auto;
+  /*
+  width: ;
+  */
+  left: 12.5%;
+  top: 8.64%;
+}
+
+.s-promo-v1 > img.author-badge {
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 27.34375%;
+  right: 12.5%;
+  top: 37.6%;
+}
+
+.s-promo-v1 > img.text-group {
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 75%;
+  left: 12.5%;
+  bottom: 20%;
+}
+
+.s-promo-v1 > img.button {
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 47.2%;
+  left: 12.5%;
+  bottom: 6.46%;
+  /**/
+  box-shadow: 0 16px 32px rgba(182, 174, 125, .56);
+  border-radius: .92rem;
+  transition: all .3s;
+}
+.s-promo-v1 > img.button:hover {
+  box-shadow: 0 0 32px rgba(182, 174, 125, .56);
+  transform: translateY(-4px);
+}
+.s-promo-v1 > img.button:active {
+  box-shadow: 0 -8px 32px rgba(182, 174, 125, .56);
+}
+
+.s-promo-v1 > img.caption {
+  display: block;
+  position: absolute;
+  height: auto;
+  width: 17.96875%;
+  right: 12.5%;
+  bottom: -5.4%;
+}
+
+/* 1024-512 */
+@media (max-width: 1024px) {
+  .s-promo-v1 {
+    display: block;
+  }
+}
+
+@media (max-width: 360px) {
+  .s-promo-v1 > img.descriptors {
+    left: 6.25%;
+    top: 4.32%;
+  }
+  .s-promo-v1 > img.button,
+  .s-promo-v1 > img.text-group {
+    left: 6.25%;
+  }
+  .s-promo-v1 > img.author-badge {
+    right: 6.25%;
+  }
+}
