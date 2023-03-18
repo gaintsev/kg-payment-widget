@@ -253,15 +253,15 @@
             <div class="form">
               <div class="field">
                 <label for="name">твоё имя</label>
-                <input v-model="userData.name" id="name" type="text" placeholder="Светлана" required>
+                <input name="name" v-model="userData.name" id="name" type="text" placeholder="Светлана" required>
               </div>
               <div class="field">
                 <label for="email">эл. почта</label>
-                <input v-model="userData.email" id="email" type="email" placeholder="example@mail.ru" required>
+                <input name="email" v-model="userData.email" id="email" type="email" placeholder="example@mail.ru" required>
               </div>
               <div class="field">
                 <label for="phone">номер телефона</label>
-                <input v-model="userData.phone" id="phone" type="text" placeholder="+7 917 1234567" required>
+                <input name="phone" v-model="userData.phone" id="phone" type="text" placeholder="+7 917 1234567" required>
               </div>
               <div
                 v-if="formError"
