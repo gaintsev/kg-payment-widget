@@ -18,7 +18,7 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 48px;
+  margin-bottom: 24px;
 }
 
 .s-testimonials-v0 > .inner > .controls {
@@ -93,6 +93,23 @@
   letter-spacing: -.04em;
 }
 
+.s-testimonials-v0 > .inner > .item > .head > .name > a {
+  display: block;
+  font-size: 17px;
+  font-weight: 600;
+  letter-spacing: .04em;
+  text-decoration-color: rgba(0, 0, 0, .16);
+  text-underline-offset: 8px;
+  text-decoration-thickness: 2px;
+  margin-top: 6px;
+  color: inherit;
+  transition: all .3s;
+}
+
+.s-testimonials-v0 > .inner > .item > .head > .name > a:hover {
+  text-decoration-color: rgba(0, 0, 0, .08);
+}
+
 .s-testimonials-v0 > .inner > .item > .body {
   position: relative;
   padding: 32px;
@@ -157,7 +174,7 @@
   }
   .s-testimonials-v0 > .inner > .text-group {
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
   }
   .s-testimonials-v0 > .inner > .item {
     padding: 32px;
@@ -182,6 +199,9 @@
     font-size: 16px;
     line-height: 1.22;
   }
+  .s-testimonials-v0 > .inner > .item > .head > .name > a {
+    font-size: 15px;
+  }
 }
 
 @media (max-width: 360px) {
@@ -198,5 +218,8 @@
   }
   .s-testimonials-v0 > .inner > .item > .head > .name {
     font-size: 24px;
+  }
+  .s-testimonials-v0 > .inner > .item > .head > .name > a {
+    font-size: 13px;
   }
 }
