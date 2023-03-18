@@ -4,18 +4,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.0">
-    <link rel="icon" type="image/png" href="favicon.png?v=1.0">
+    <link rel="icon" type="image/svg+xml" href="favicon.svg?v=1.1">
+    <link rel="icon" type="image/png" href="favicon.png?v=1.1">
 
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
-    <link href="master.css?v=1.0" rel="stylesheet">
+    <link href="master.css?v=1.1" rel="stylesheet">
 
     <!-- og -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="«Онлайн-карьера в декрете 3.0»">
     <meta property="og:description" content="Онлайн-курс Кристины Гордовой">
     <meta property="og:url" content="http://course.mama-v-online.ru">
-    <meta property="og:image" content="http://course.mama-v-online.ru/og.jpg?v=1.0">
+    <meta property="og:image" content="http://course.mama-v-online.ru/og.jpg?v=1.1">
     <!-- /og -->
 
     <title>
@@ -28,102 +28,102 @@
 
       <div v-cloak class="s-promo-v0">
         <div class="inner">
-          <img data-aos="fade-left" data-aos-delay="0" class="cover" src="sections/promo-v0/cover.jpg?v=1.0">
+          <img data-aos="fade-left" data-aos-delay="0" class="cover" src="sections/promo-v0/cover.jpg?v=1.1">
           <div class="descriptors" data-aos="fade-left" data-aos-delay="100">
-            <img src="sections/promo-v0/descriptors.svg?v=1.0">
+            <img src="sections/promo-v0/descriptors.svg?v=1.1">
           </div>
           <div class="title-group" data-aos="fade-left" data-aos-delay="200">
-            <img src="sections/promo-v0/title-group.svg?v=1.0">
+            <img src="sections/promo-v0/title-group.svg?v=1.1">
           </div>
           <div v-on:click="scrollTo('author')" class="author-badge" data-aos="fade-up" data-aos-delay="500">
-            <img src="sections/promo-v0/author-badge.png?v=1.0">
+            <img src="sections/promo-v0/author-badge.png?v=1.1">
           </div>
 
           <div class="slider" data-aos="fade-left" data-aos-delay="300">
             <div class="head">
               <div class="title">
-                <img src="sections/promo-v0/slider-title.svg?v=1.0">
+                <img src="sections/promo-v0/slider-title.svg?v=1.1">
               </div>
               <div class="pagination">
                 <span class="current">{{ ((current)*-1)+1 }}</span>/
                 <span class="total">{{ features.length }}</span>
               </div>
               <div class="navigation">
-                <img v-on:click="current = current + 1" src="sections/promo-v0/button-prev.svg?v=1.0">
-                <img v-on:click="current = current - 1" src="sections/promo-v0/button-next.svg?v=1.0">
+                <img v-on:click="current = current + 1" src="sections/promo-v0/button-prev.svg?v=1.1">
+                <img v-on:click="current = current - 1" src="sections/promo-v0/button-next.svg?v=1.1">
               </div>
             </div>
             <div class="list v-full" ref="listFull" data-item-width="435">
               <div v-for="item in features" class="item">
-                <img :src="'sections/promo-v0/slider-item-' + item + '.svg?v=1.0'">
+                <img :src="'sections/promo-v0/slider-item-' + item + '.svg?v=1.1'">
               </div>
             </div>
             <div class="list v-960" ref="list960" data-item-width="328">
               <div v-for="item in features" class="item">
-                <img :src="'sections/promo-v0/slider-item-' + item + '-m.svg?v=1.0'">
+                <img :src="'sections/promo-v0/slider-item-' + item + '-m.svg?v=1.1'">
               </div>
             </div>
           </div>
 
           <div class="menu" data-aos="fade-left" data-aos-delay="400">
-            <img v-on:click="modalData.show = true" class="button" src="sections/promo-v0/button.svg?v=1.0">
-            <img v-on:click="scrollTo('program')" class="link" src="sections/promo-v0/link-program.svg?v=1.0">
-            <img v-on:click="scrollTo('author')" class="link" src="sections/promo-v0/link-author.svg?v=1.0">
-            <img v-on:click="scrollTo('testimonials')" class="link" src="sections/promo-v0/link-testimonials.svg?v=1.0">
-            <img v-on:click="scrollTo('arrow')" class="arrow" src="sections/promo-v0/arrow.svg?v=1.0">
+            <img v-on:click="modalData.show = true" class="button" src="sections/promo-v0/button.svg?v=1.1">
+            <img v-on:click="scrollTo('program')" class="link" src="sections/promo-v0/link-program.svg?v=1.1">
+            <img v-on:click="scrollTo('author')" class="link" src="sections/promo-v0/link-author.svg?v=1.1">
+            <img v-on:click="scrollTo('testimonials')" class="link" src="sections/promo-v0/link-testimonials.svg?v=1.1">
+            <img v-on:click="scrollTo('arrow')" class="arrow" src="sections/promo-v0/arrow.svg?v=1.1">
           </div>
         </div>
       </div>
 
       <div class="s-promo-v1">
-        <img class="base" src="sections/promo-v1/base.jpg?v=1.0">
-        <img class="descriptors" src="sections/promo-v1/descriptors.svg?v=1.0">
-        <img v-on:click="scrollTo('author-v1')" class="author-badge" src="sections/promo-v1/author-badge.png?v=1.0">
-        <img class="text-group" src="sections/promo-v1/text-group.svg?v=1.0">
-        <img v-on:click="modalData.show = true" class="button" src="sections/promo-v1/button.svg?v=1.0">
-        <img v-on:click="scrollTo('features')" class="caption" src="sections/promo-v1/caption.svg?v=1.0">
+        <img class="base" src="sections/promo-v1/base.jpg?v=1.1">
+        <img class="descriptors" src="sections/promo-v1/descriptors.svg?v=1.1">
+        <img v-on:click="scrollTo('author-v1')" class="author-badge" src="sections/promo-v1/author-badge.png?v=1.1">
+        <img class="text-group" src="sections/promo-v1/text-group.svg?v=1.1">
+        <img v-on:click="modalData.show = true" class="button" src="sections/promo-v1/button.svg?v=1.1">
+        <img v-on:click="scrollTo('features')" class="caption" src="sections/promo-v1/caption.svg?v=1.1">
       </div>
 
       <div ref="features" class="s-features-v0">
         <div class="inner">
-          <img class="text-group" src="sections/features-v0/text-group.svg?v=1.0">
+          <img class="text-group" src="sections/features-v0/text-group.svg?v=1.1">
           <div class="list">
-            <img src="sections/features-v0/features-item-1.svg?v=1.0">
-            <img src="sections/features-v0/features-item-2.svg?v=1.0">
-            <img src="sections/features-v0/features-item-3.svg?v=1.0">
-            <img src="sections/features-v0/features-item-4.svg?v=1.0">
-            <img src="sections/features-v0/features-item-5.svg?v=1.0">
-            <img src="sections/features-v0/features-item-6.svg?v=1.0">
-            <img src="sections/features-v0/features-item-7.svg?v=1.0">
-            <img src="sections/features-v0/features-item-8.svg?v=1.0">
+            <img src="sections/features-v0/features-item-1.svg?v=1.1">
+            <img src="sections/features-v0/features-item-2.svg?v=1.1">
+            <img src="sections/features-v0/features-item-3.svg?v=1.1">
+            <img src="sections/features-v0/features-item-4.svg?v=1.1">
+            <img src="sections/features-v0/features-item-5.svg?v=1.1">
+            <img src="sections/features-v0/features-item-6.svg?v=1.1">
+            <img src="sections/features-v0/features-item-7.svg?v=1.1">
+            <img src="sections/features-v0/features-item-8.svg?v=1.1">
           </div>
         </div>
       </div>
 
       <div ref="program" class="s-program-v0">
         <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/program-v0/text-group.svg?v=1.0">
+          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/program-v0/text-group.svg?v=1.1">
           <div class="list">
-            <img data-aos="fade-left" data-aos-delay="0" src="sections/program-v0/program-item-1.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="100" src="sections/program-v0/program-item-2.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="200" src="sections/program-v0/program-item-3.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="300" src="sections/program-v0/program-item-4.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="400" src="sections/program-v0/program-item-5.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="500" src="sections/program-v0/program-item-6.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="600" src="sections/program-v0/program-item-7.svg?v=1.0">
-            <img data-aos="fade-left" data-aos-delay="700" src="sections/program-v0/program-item-8.svg?v=1.0">
-            <img v-on:click="modalData.show = true" data-aos="fade-left" data-aos-delay="800" src="sections/program-v0/program-item-9.svg?v=1.0" class="button">
+            <img data-aos="fade-left" data-aos-delay="0" src="sections/program-v0/program-item-1.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="100" src="sections/program-v0/program-item-2.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="200" src="sections/program-v0/program-item-3.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="300" src="sections/program-v0/program-item-4.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="400" src="sections/program-v0/program-item-5.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="500" src="sections/program-v0/program-item-6.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="600" src="sections/program-v0/program-item-7.svg?v=1.1">
+            <img data-aos="fade-left" data-aos-delay="700" src="sections/program-v0/program-item-8.svg?v=1.1">
+            <img v-on:click="modalData.show = true" data-aos="fade-left" data-aos-delay="800" src="sections/program-v0/program-item-9.svg?v=1.1" class="button">
           </div>
         </div>
       </div>
 
       <div ref="author" class="s-author-v0">
         <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/author-v0/text-group.svg?v=1.0">
-          <img data-aos="fade-up" data-aos-delay="100" class="cover" src="sections/author-v0/cover.jpg?v=1.0">
+          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/author-v0/text-group.svg?v=1.1">
+          <img data-aos="fade-up" data-aos-delay="100" class="cover" src="sections/author-v0/cover.jpg?v=1.1">
           <div data-aos="fade-up" data-aos-delay="300" class="about-section">
             <a href="https://t.me/kristina_gordova" target="_blank">
-              <img class="author" src="sections/author-v0/author.svg?v=1.0">
+              <img class="author" src="sections/author-v0/author.svg?v=1.1">
             </a>
             <div class="about">
               <ul>
@@ -136,10 +136,10 @@
 
       <div ref="author-v1" class="s-author-v1">
         <div class="inner">
-          <img class="text-group" src="sections/author-v1/text-group.svg?v=1.0">
-          <img class="cover" src="sections/author-v1/cover.jpg?v=1.0">
+          <img class="text-group" src="sections/author-v1/text-group.svg?v=1.1">
+          <img class="cover" src="sections/author-v1/cover.jpg?v=1.1">
           <a href="https://t.me/kristina_gordova" target="_blank">
-            <img class="author" src="sections/author-v1/author.svg?v=1.0">
+            <img class="author" src="sections/author-v1/author.svg?v=1.1">
           </a>
           <div class="about">
             <ul>
@@ -151,37 +151,61 @@
 
       <div ref="testimonials" v-cloak class="s-testimonials-v0">
         <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/testimonials-v0/text-group.svg?v=1.0">
-          <div class="list">
-            <div
-              v-for="item, index in testimonials"
-              v-bind:class="'v-' + item.color"
-              class="item"
-              data-aos="fade-up"
+          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/testimonials-v0/text-group.svg?v=1.1">
+          <div class="controls">
+            <button
+              v-on:click="switchTestimonial(testimonials.currentIndex - 1)"
+              type="button"
             >
-              <div class="head">
-                <div class="avatar">
-                  <img :src="'sections/testimonials-v0/' + item.slug + '.png?v=1.0'">
-                </div>
-                <div class="name">
-                  {{ item.name }}
-                </div>
+              <img src="sections/testimonials-v0/prev.svg">
+            </button>
+            <button
+              v-on:click="switchTestimonial(testimonials.currentIndex + 1)"
+              type="button"
+            >
+            <img src="sections/testimonials-v0/next.svg">
+            </button>
+          </div>
+          <div
+            v-bind:class="'v-' + currentTestimonial.color"
+            class="item"
+          >
+            <div class="head">
+              <div class="avatar">
+                <img :src="'sections/testimonials-v0/' + currentTestimonial.slug + '.png'">
               </div>
-              <div class="body">
-                <div class="box">
-                  <p>
-                    {{ item.text }}
-                  </p>
-                </div>
+              <div class="name">
+                {{ currentTestimonial.name }}
               </div>
             </div>
+            <div class="body">
+              <div class="box">
+                <p>
+                  {{ currentTestimonial.text }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="controls">
+            <button
+              v-on:click="switchTestimonial(testimonials.currentIndex - 1)"
+              type="button"
+            >
+              <img src="sections/testimonials-v0/prev.svg">
+            </button>
+            <button
+              v-on:click="switchTestimonial(testimonials.currentIndex + 1)"
+              type="button"
+            >
+            <img src="sections/testimonials-v0/next.svg">
+            </button>
           </div>
         </div>
       </div>
 
       <div class="s-button-row-v0">
         <div class="inner">
-          <img v-on:click="modalData.show = true" src="sections/button-row-v0/button.svg?v=1.0">
+          <img v-on:click="modalData.show = true" src="sections/button-row-v0/button.svg?v=1.1">
         </div>
       </div>
 
@@ -242,7 +266,7 @@
                 v-on:click="sendData()"
                 type="button"
               >
-                <img src="sections/modal-v0/button.svg?v=1.0">
+                <img src="sections/modal-v0/button.svg?v=1.1">
               </button>
             </div>
 
@@ -251,7 +275,7 @@
               type="button"
               v-on:click="modalData.show = false"
             >
-              <img src="sections/modal-v0/close.svg?v=1.0">
+              <img src="sections/modal-v0/close.svg?v=1.1">
             </button>
 
           </div>
@@ -260,9 +284,9 @@
 
     </main>
 
-    <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js" charset="utf-8"></script>
+    <script src="https://unpkg.com/vue@2.6.14/dist/vue.js" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="master.js?v=1.0"></script>
+    <script src="master.js?v=1.1"></script>
 
   </body>
 </html>
