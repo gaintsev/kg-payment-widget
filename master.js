@@ -198,6 +198,8 @@ const page = new Vue({
           + 'phone=' + this.userData.phone
           + '&email=' + this.userData.email
           + '&username=' + this.userData.name
+          + this.getUtm('gcao')
+          + this.getUtm('gcpc')
           + this.getUtm('utm_source')
           + this.getUtm('utm_medium')
           + this.getUtm('utm_campaign')
