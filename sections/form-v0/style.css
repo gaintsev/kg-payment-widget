@@ -1,0 +1,17 @@
+.s-form-v0 {
+  background-color: #F0ECD3;
+}
+
+.s-form-v0 > .inner {
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+/* 1024-512 */
+@media (max-width: 1024px) {
+  .s-form-v0 {
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
