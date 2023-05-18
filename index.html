@@ -71,7 +71,7 @@
             <img data-master-scroll-to="s-form-v0" class="button" src="sections/promo-v0/button.svg?v=2.7">
             <img data-master-scroll-to="s-program-v0" class="link" src="sections/promo-v0/link-program.svg?v=2.7">
             <img data-master-scroll-to="s-author-v0" class="link" src="sections/promo-v0/link-author.svg?v=2.7">
-            <img data-master-scroll-to="s-testimonials-v0" class="link" src="sections/promo-v0/link-testimonials.svg?v=2.7">
+            <img data-master-scroll-to="s-testimonials-v1" class="link" src="sections/promo-v0/link-testimonials.svg?v=2.7">
             <img class="arrow" src="sections/promo-v0/arrow.svg?v=2.7">
           </div>
         </div>
@@ -151,75 +151,80 @@
         </div>
       </div>
 
-      <div ref="testimonials" v-cloak class="s-testimonials-v0" id="s-testimonials-v0">
+      <div ref="testimonials" v-cloak class="s-testimonials-v1" id="s-testimonials-v1">
         <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/testimonials-v0/text-group.svg?v=2.7">
+          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/testimonials-v1/text-group.svg?v=2.7">
           <div class="controls">
             <button
-              v-on:click="switchTestimonial(testimonials.currentIndex - 1)"
+              v-on:click="switchTestimonial(testimonials.currenSlideIndex - 1)"
               type="button"
             >
-              <img src="sections/testimonials-v0/prev.svg">
+              <img src="sections/testimonials-v1/prev.svg">
             </button>
             <button
-              v-on:click="switchTestimonial(testimonials.currentIndex + 1)"
+              v-on:click="switchTestimonial(testimonials.currenSlideIndex + 1)"
               type="button"
             >
-            <img src="sections/testimonials-v0/next.svg">
+            <img src="sections/testimonials-v1/next.svg">
             </button>
           </div>
-          <div
-            v-bind:class="'v-' + currentTestimonial.color"
-            class="item"
-          >
-            <div v-if="currentTestimonial.video_id" class="type-video">
-              <div class="player">
+
+          <div class="slide">
+            <div
+              v-for="testimonial in currentSlide"
+              v-bind:class="{ 'v-video': testimonial.video_id }"
+              class="phone"
+            >
+              <div v-if="testimonial.video_id" class="inner v-player">
                 <iframe
-                  :src="'https://www.youtube.com/embed/' + currentTestimonial.video_id"
-                  :title="currentTestimonial.name"
+                  :src="'https://www.youtube.com/embed/' + testimonial.video_id"
+                  :title="testimonial.name"
                   frameborder="0"
                   allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                   allowfullscreen
                 ></iframe>
               </div>
-            </div>
-            <div v-else class="type-text">
-              <div class="head">
-                <div class="avatar">
-                  <img :src="'sections/testimonials-v0/' + currentTestimonial.slug + '.png'">
+              <div v-else class="inner">
+                <div class="header">
+                  <div class="avatar">
+                    <img :src="'sections/testimonials-v1/' + testimonial.slug + '.png'">
+                  </div>
+                  <div class="text">
+                    <div class="name">
+                      {{ testimonial.name }}
+                    </div>
+                    <div class="link">
+                      <a
+                        v-if="testimonial.telegram"
+                        :href="'https://t.me/' + testimonial.telegram"
+                        target="_blank"
+                      >
+                        @{{ testimonial.telegram }}
+                      </a>
+                    </div>
+                  </div>
                 </div>
-                <div class="name">
-                  {{ currentTestimonial.name }}
-                  <a
-                    v-if="currentTestimonial.telegram"
-                    :href="'https://t.me/' + currentTestimonial.telegram"
-                    target="_blank"
-                  >
-                    @{{ currentTestimonial.telegram }}
-                  </a>
-                </div>
-              </div>
-              <div class="body">
-                <div class="box">
-                  <p>
-                    {{ currentTestimonial.text }}
-                  </p>
+                <div class="body">
+                  <div v-for="p in testimonial.text" class="message">
+                    {{ p }}
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="controls">
             <button
-              v-on:click="switchTestimonial(testimonials.currentIndex - 1)"
+              v-on:click="switchTestimonial(testimonials.currenSlideIndex - 1)"
               type="button"
             >
-              <img src="sections/testimonials-v0/prev.svg">
+              <img src="sections/testimonials-v1/prev.svg">
             </button>
             <button
-              v-on:click="switchTestimonial(testimonials.currentIndex + 1)"
+              v-on:click="switchTestimonial(testimonials.currenSlideIndex + 1)"
               type="button"
             >
-            <img src="sections/testimonials-v0/next.svg">
+            <img src="sections/testimonials-v1/next.svg">
             </button>
           </div>
         </div>
@@ -256,14 +261,18 @@
 
     <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js" charset="utf-8"></script>
     <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js" charset="utf-8"></script>
-    <script src="scripts/scroll-to.js"></script>
+    <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js" charset="utf-8"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="scripts/scroll-to.js?v=2.7"></script>
+    <script src="scripts/testimonials.js?v=2.7"></script>
+
     <script src="sections/promo-v0/script.js?v=2.7"></script>
     <script src="sections/promo-v1/script.js?v=2.7"></script>
     <script src="sections/program-v0/script.js?v=2.7"></script>
     <script src="sections/author-v0/script.js?v=2.7"></script>
     <script src="sections/author-v1/script.js?v=2.7"></script>
-    <script src="sections/testimonials-v0/script.js?v=2.7"></script>
+    <script src="sections/testimonials-v1/script.js?v=2.7"></script>
 
   </body>
 </html>

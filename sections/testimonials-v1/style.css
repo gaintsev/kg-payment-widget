@@ -1,0 +1,201 @@
+.s-testimonials-v1 {
+  width: 100%;
+  background-color: #F0ECD3;
+}
+
+.s-testimonials-v1 > .inner {
+  width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-radius: 32px;
+  background-color: #fff;
+}
+
+.s-testimonials-v1 > .inner > .text-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
+}
+
+.s-testimonials-v1 > .inner > .controls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+
+.s-testimonials-v1 > .inner > .controls > button {
+  display: block;
+  cursor: pointer;
+  border: none;
+  margin: 4px;
+  padding: 0;
+  transition: all .3s;
+  background-color: transparent;
+}
+
+.s-testimonials-v1 > .inner > .controls > button img {
+  display: block;
+}
+
+.s-testimonials-v1 > .inner > .controls > button:hover {
+  opacity: .64;
+}
+
+.s-testimonials-v1 > .inner > .slide {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone {
+  position: relative;
+  margin: 12px;
+  width: 320px;
+  height: 648px;
+  background-image: url('phone.png');
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center top;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone.v-video {
+  /**/
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner {
+  width: 293px;
+  height: 627px;
+  left: 14px;
+  position: absolute;
+  top: 11px;
+  border-radius: 40px;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > iframe {
+  display: block;
+  border-radius: 38px;
+  width: 100%;
+  height: 100%;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 11px 14px;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .avatar {
+  margin-right: 10px;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .avatar img {
+  display: block;
+  width: 50px;
+  height: 50px;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .text {
+  /**/
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .text > .name {
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: -.02em;
+  color: #000;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .text > .link {
+  padding-top: 2px;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .text > .link a {
+  font-size: 13px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, .16);
+  color: #000;
+  transition: all .3s;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .header > .text > .link a:hover {
+  border-bottom: 1px solid rgba(0, 0, 0, .32);
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .body {
+  width: 100%;
+  height: 512px;
+  padding: 12px;
+  box-sizing: border-box;
+  overflow-y: scroll;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .body > .message {
+  position: relative;
+  padding: 15px;
+  margin-bottom: 12px;
+  border-radius: 4px;
+  border-top-left-radius: 0;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.25;
+  background-color: #fff;
+}
+
+.s-testimonials-v1 > .inner > .slide > .phone > .inner > .body > .message:before {
+  position: absolute;
+  display: block;
+  content: '';
+  left: -6px;
+  top: 0;
+  width: 6px;
+  height: 6px;
+  background-image: url('corner.svg');
+  background-repeat: no-repeat;
+  background-position: left top;
+}
+
+/* 1344-960 */
+@media (max-width: 1344px) {
+  .s-testimonials-v1 > .inner {
+    position: relative;
+    width: 960px;
+  }
+  .s-testimonials-v1 > .inner {
+    display: block;
+  }
+}
+
+/* 1024-512 */
+@media (max-width: 1024px) {
+  .s-testimonials-v1 {
+    max-width: 512px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .s-testimonials-v1 > .inner {
+    width: 100%;
+    max-width: 448px;
+    padding: 32px;
+    height: auto;
+  }
+  .s-testimonials-v1 > .inner > .text-group {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 424px) {
+  /**/
+}
+
+@media (max-width: 360px) {
+  /**/
+}
