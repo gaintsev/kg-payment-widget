@@ -7,271 +7,93 @@
     <link rel="icon" type="image/svg+xml" href="favicon.svg?v=4.0">
     <link rel="icon" type="image/png" href="favicon.png?v=4.0">
 
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
     <link href="master.css?v=4.0" rel="stylesheet">
 
-    <!-- og -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="«Онлайн-карьера в декрете 5.0»">
-    <meta property="og:description" content="Онлайн-курс Кристины Гордовой">
-    <meta property="og:url" content="https://course.mama-v-online.ru">
-    <meta property="og:image" content="https://course.mama-v-online.ru/og.jpg?v=4.0">
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:image" content="https://course.mama-v-online.ru/og.jpg?v=4.0">
-    <!-- /og -->
-
     <title>
-      «Онлайн-карьера в декрете 5.0» — онлайн-курс Кристины Гордовой
+      Оплата
     </title>
   </head>
   <body>
 
-    <main id="page">
+    <main>
 
-      <div v-cloak class="s-promo-v0" id="s-promo-v0">
+      <div class="s-form-widget">
         <div class="inner">
-          <img data-aos="fade-left" data-aos-delay="0" class="cover" src="sections/promo-v0/cover.jpg?v=4.0">
-          <div class="descriptors" data-aos="fade-left" data-aos-delay="100">
-            <img src="sections/promo-v0/descriptors.svg?v=4.0">
-          </div>
-          <div class="title-group" data-aos="fade-left" data-aos-delay="200">
-            <img src="sections/promo-v0/title-group.svg?v=4.0">
-          </div>
-          <div data-master-scroll-to="s-author-v0" class="author-badge" data-aos="fade-up" data-aos-delay="500">
-            <img src="sections/promo-v0/author-badge.png?v=4.0">
-          </div>
 
-          <div class="slider" data-aos="fade-left" data-aos-delay="300">
-            <div class="head">
+          <div class="widget">
+
+            <div class="text-group">
               <div class="title">
-                <img src="sections/promo-v0/slider-title.svg?v=4.0">
+                Оплата продукта
               </div>
-              <div class="pagination">
-                <span class="current">{{ ((current)*-1)+1 }}</span>/
-                <span class="total">{{ features.length }}</span>
-              </div>
-              <div class="navigation">
-                <img v-on:click="current = current + 1" src="sections/promo-v0/button-prev.svg?v=4.0">
-                <img v-on:click="current = current - 1" src="sections/promo-v0/button-next.svg?v=4.0">
+              <div class="text">
+                Пожалуйста, укажите ваш номер телефона и выберите срок подписки
               </div>
             </div>
-            <div class="list v-full" ref="listFull" data-item-width="435">
-              <div v-for="item in features" class="item">
-                <img :src="'sections/promo-v0/slider-item-' + item + '.svg?v=4.0'">
-              </div>
-            </div>
-            <div class="list v-960" ref="list960" data-item-width="328">
-              <div v-for="item in features" class="item">
-                <img :src="'sections/promo-v0/slider-item-' + item + '-m.svg?v=4.0'">
-              </div>
-            </div>
-          </div>
+  
+            <div class="form">
+              <form action="?TODO" method="post">
+  
+                <div class="field-group">
+                  <label for="phone">
+                    Номер телефона
+                  </label>
+                  <input
+                    id="phone"
+                    name="phone"
+                    placeholder="+7 917 1234567"
+                    type="text"
+                    required
+                  >
+                </div>
 
-          <div class="menu" data-aos="fade-left" data-aos-delay="400">
-            <img data-master-scroll-to="s-form-v0" class="button" src="sections/promo-v0/button.svg?v=4.0">
-            <img data-master-scroll-to="s-program-v0" class="link" src="sections/promo-v0/link-program.svg?v=4.0">
-            <img data-master-scroll-to="s-author-v0" class="link" src="sections/promo-v0/link-author.svg?v=4.0">
-            <img data-master-scroll-to="s-testimonials-v1" class="link" src="sections/promo-v0/link-testimonials.svg?v=4.0">
-            <img class="arrow" src="sections/promo-v0/arrow.svg?v=4.0">
-          </div>
-        </div>
-      </div>
+                <div class="field-group">
+                  <label for="plan">
+                    План подписки
+                  </label>
+                  <select
+                    id="plan"
+                    name="plan"
+                  >
+                    <option value="1">1 месяц / 1000 руб.</option>
+                    <option value="3">3 месяца / 2000 руб.</option>
+                    <option value="6">6 месяцев / 3000 руб.</option>
+                    <option value="12">1 год / 4000 руб.</option>
+                  </select>
+                </div>
 
-      <div id="s-promo-v1" class="s-promo-v1">
-        <img class="base" src="sections/promo-v1/base.jpg?v=4.0">
-        <img class="descriptors" src="sections/promo-v1/descriptors.svg?v=4.0">
-        <img data-master-scroll-to="s-author-v1" class="author-badge" src="sections/promo-v1/author-badge.png?v=4.0">
-        <img class="text-group" src="sections/promo-v1/text-group.svg?v=4.0">
-        <img data-master-scroll-to="s-form-v0" class="button" src="sections/promo-v1/button.svg?v=4.0">
-        <img data-master-scroll-to="s-features-v0" class="caption" src="sections/promo-v1/caption.svg?v=4.0">
-      </div>
-
-      <div id="s-features-v0" class="s-features-v0">
-        <div class="inner">
-          <img class="text-group" src="sections/features-v0/text-group.svg?v=4.0">
-          <div class="list">
-            <img src="sections/features-v0/features-item-1.svg?v=4.0">
-            <img src="sections/features-v0/features-item-2.svg?v=4.0">
-            <img src="sections/features-v0/features-item-3.svg?v=4.0">
-            <img src="sections/features-v0/features-item-4.svg?v=4.0">
-            <img src="sections/features-v0/features-item-5.svg?v=4.0">
-            <img src="sections/features-v0/features-item-6.svg?v=4.0">
-            <img src="sections/features-v0/features-item-7.svg?v=4.0">
-            <img src="sections/features-v0/features-item-8.svg?v=4.0">
-          </div>
-        </div>
-      </div>
-
-      <div id="s-program-v0" ref="program" class="s-program-v0">
-        <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/program-v0/text-group.svg?v=4.0">
-          <div class="list">
-            <img data-aos="fade-left" data-aos-delay="0" src="sections/program-v0/program-item-1.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="100" src="sections/program-v0/program-item-2.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="200" src="sections/program-v0/program-item-3.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="300" src="sections/program-v0/program-item-4.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="400" src="sections/program-v0/program-item-5.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="500" src="sections/program-v0/program-item-6.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="600" src="sections/program-v0/program-item-7.svg?v=4.0">
-            <img data-aos="fade-left" data-aos-delay="700" src="sections/program-v0/program-item-8.svg?v=4.0">
-            <img data-master-scroll-to="s-form-v0" data-aos="fade-left" data-aos-delay="800" src="sections/program-v0/program-item-9.svg?v=4.0" class="button">
-          </div>
-        </div>
-      </div>
-
-      <div class="s-author-v0" id="s-author-v0">
-        <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/author-v0/text-group.svg?v=4.0">
-          <img data-aos="fade-up" data-aos-delay="100" class="cover" src="sections/author-v0/cover.jpg?v=4.0">
-          <div data-aos="fade-up" data-aos-delay="300" class="about-section">
-            <a href="https://t.me/kristina_gordova" target="_blank">
-              <img class="author" src="sections/author-v0/author.svg?v=4.0">
-            </a>
-            <div class="about">
-              <ul>
-                <li v-for="item in regalia" v-html="item"></li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div ref="author-v1" class="s-author-v1" id="s-author-v1">
-        <div class="inner">
-          <img class="text-group" src="sections/author-v1/text-group.svg?v=4.0">
-          <img class="cover" src="sections/author-v1/cover.jpg?v=4.0">
-          <a href="https://t.me/kristina_gordova" target="_blank">
-            <img class="author" src="sections/author-v1/author.svg?v=4.0">
-          </a>
-          <div class="about">
-            <ul>
-              <li v-for="item in regalia" v-html="item"></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div ref="testimonials" v-cloak class="s-testimonials-v1" id="s-testimonials-v1">
-        <div class="inner">
-          <img data-aos="fade-up" data-aos-delay="0" class="text-group" src="sections/testimonials-v1/text-group.svg?v=4.0">
-          <div class="controls">
-            <button
-              v-on:click="switchTestimonial(testimonials.currenSlideIndex - 1)"
-              type="button"
-            >
-              <img src="sections/testimonials-v1/prev.svg">
-            </button>
-            <button
-              v-on:click="switchTestimonial(testimonials.currenSlideIndex + 1)"
-              type="button"
-            >
-            <img src="sections/testimonials-v1/next.svg">
-            </button>
-          </div>
-
-          <div class="slide">
-            <div
-              v-for="testimonial in currentSlide"
-              v-bind:class="{ 'v-video': testimonial.video_id }"
-              class="phone"
-            >
-              <div v-if="testimonial.video_id" class="inner v-player">
-                <iframe
-                  :src="'https://www.youtube.com/embed/' + testimonial.video_id"
-                  :title="testimonial.name"
-                  frameborder="0"
-                  allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowfullscreen
-                ></iframe>
-              </div>
-              <div v-else class="inner">
-                <div class="header">
-                  <div class="avatar">
-                    <img :src="'sections/testimonials-v1/' + testimonial.slug + '.png'">
-                  </div>
-                  <div class="text">
-                    <div class="name">
-                      {{ testimonial.name }}
-                    </div>
-                    <div class="link">
-                      <a
-                        v-if="testimonial.telegram"
-                        :href="'https://t.me/' + testimonial.telegram"
-                        target="_blank"
-                      >
-                        @{{ testimonial.telegram }}
-                      </a>
-                    </div>
+                <div class="field-group v-promocode">
+                  <div class="row">
+                    <input
+                      id="promocode"
+                      name="promocode"
+                      type="text"
+                      placeholder="Промокод"
+                    >
+                    <button type="button">
+                      Применить
+                    </button>
                   </div>
                 </div>
-                <div class="body">
-                  <div v-for="p in testimonial.text" class="message">
-                    {{ p }}
-                  </div>
+  
+                <div class="button">
+                  <button type="submit">
+                    Оплатить
+                  </button>
                 </div>
-              </div>
+  
+              </form>
             </div>
+
+
           </div>
 
-          <div class="controls">
-            <button
-              v-on:click="switchTestimonial(testimonials.currenSlideIndex - 1)"
-              type="button"
-            >
-              <img src="sections/testimonials-v1/prev.svg">
-            </button>
-            <button
-              v-on:click="switchTestimonial(testimonials.currenSlideIndex + 1)"
-              type="button"
-            >
-            <img src="sections/testimonials-v1/next.svg">
-            </button>
-          </div>
-        </div>
-      </div>
 
-      <div id="s-form-v0" class="s-form-v0">
-        <div class="inner">
-          <script
-            id="0baccf676c562d0302264ef4cfe770d73a16ff9c"
-            src="https://mama-v-online.ru/pl/lite/widget/script?id=868318"
-          ></script>
-        </div>
-      </div>
-
-      <div class="s-footer-v0">
-        <div class="inner">
-          <div class="text-column">
-            <div class="label">Онлайн-карьера в декрете 5.0</div>
-            <div class="value">онлайн-курс Кристины Гордовой</div>
-          </div>
-          <div class="text-column">
-            <div class="label">© 2023</div>
-            <div class="value">
-              <a href="https://gordov.pro/oferta" target="_blank">
-                Публичная оферта
-              </a>
-            </div>
-          </div>
         </div>
       </div>
 
     </main>
-    
 
-    <script src="https://unpkg.com/vue@2.6.14/dist/vue.min.js" charset="utf-8"></script>
-    <script src="https://unpkg.com/jquery@3.6.0/dist/jquery.min.js" charset="utf-8"></script>
-    <script src="https://unpkg.com/lodash@4.17.21/lodash.min.js" charset="utf-8"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <script src="scripts/scroll-to.js?v=4.0"></script>
-
-    <script src="sections/promo-v0/script.js?v=4.0"></script>
-    <script src="sections/promo-v1/script.js?v=4.0"></script>
-    <script src="sections/program-v0/script.js?v=4.0"></script>
-    <script src="sections/author-v0/script.js?v=4.0"></script>
-    <script src="sections/author-v1/script.js?v=4.0"></script>
-    <script src="sections/testimonials-v1/script.js?v=4.0"></script>
 
   </body>
 </html>

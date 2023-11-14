@@ -1,18 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;500;700;800;900&display=swap');
 
-/* sections */
-@import url('sections/promo-v0/style.css');
-@import url('sections/promo-v1/style.css');
-@import url('sections/program-v0/style.css');
-@import url('sections/features-v0/style.css');
-@import url('sections/author-v0/style.css');
-@import url('sections/author-v1/style.css');
-@import url('sections/testimonials-v1/style.css');
-@import url('sections/button-row-v0/style.css');
-@import url('sections/footer-v0/style.css');
-@import url('sections/modal-v0/style.css');
-@import url('sections/form-v0/style.css');
-
 /* root */
 html {
   margin: 0;
@@ -33,11 +20,7 @@ html > body {
   line-height: 1;
   font-family: 'Mulish', Arial, Helvetica, sans-serif;
   color: #343434;
-  background-color: #B7B39A;
-}
-
-html > body.v-modal {
-  overflow: hidden;
+  background-color: #F0ECD3;
 }
 
 /* common */
@@ -47,4 +30,169 @@ button::-moz-focus-inner {
 
 [v-cloak] {
   display: none;
+}
+
+/* form-widget */
+.s-form-widget {
+  /**/
+}
+
+.s-form-widget > .inner {
+  padding: 56px 16px 32px;
+}
+
+.s-form-widget > .inner > .widget {
+  max-width: 512px;
+  box-sizing: border-box;
+  padding: 56px 48px;
+  border-radius: 32px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #fff;
+}
+
+.s-form-widget > .inner > .widget > .text-group {
+  margin-bottom: 24px;
+}
+
+.s-form-widget > .inner > .widget > .text-group > .title {
+  font-size: 36px;
+  line-height: 1;
+  font-weight: 900;
+}
+
+.s-form-widget > .inner > .widget > .text-group > .text {
+  padding-top: 8px;
+  font-size: 17px;
+  line-height: 1.2;
+}
+
+.s-form-widget > .inner > .widget .field-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.s-form-widget > .inner > .widget .field-group label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 15px;
+  font-weight: 600;
+  left: 24px;
+  top: 12px;
+}
+
+.s-form-widget > .inner > .widget .field-group input,
+.s-form-widget > .inner > .widget .field-group select {
+  display: block;
+  width: 100%;
+  border: none;
+  font-family: 'Mulish', Arial, Helvetica, sans-serif;
+  letter-spacing: -0.02em;
+  font-size: 20px;
+  box-sizing: border-box;
+  padding: 32px 24px 12px;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  background-color: rgba(240, 236, 211, 0.64);
+  transition: all .3s;
+}
+
+.s-form-widget > .inner > .widget .field-group input:focus,
+.s-form-widget > .inner > .widget .field-group select:focus {
+  border-color: #93D56F;
+}
+
+.s-form-widget > .inner > .widget .field-group.v-promocode {
+  padding-top: 16px;
+  padding-bottom: 8px;
+  border-top: 1px solid #34343424;
+}
+
+.s-form-widget > .inner > .widget .field-group .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.s-form-widget > .inner > .widget .field-group .row input {
+  border-radius: 8px;
+  margin-right: 8px;
+  padding: 10px 16px;
+  font-size: 16px;
+}
+
+.s-form-widget > .inner > .widget .field-group .row button {
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 12px 16px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .32);
+  letter-spacing: .4px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: rgb(52, 52, 52);
+  transition: all .3s;
+}
+
+.s-form-widget > .inner > .widget .button > button,
+.s-form-widget > .inner > .widget .button > a {
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 18px 40px;
+  text-shadow: 0 1px 0 rgba(0, 0, 0, .32);
+  letter-spacing: .4px;
+  border: none;
+  cursor: pointer;
+  color: white;
+  background-color: #93D56F;
+  background-image: linear-gradient(
+    to bottom,
+    #93D56F,
+    #659A57
+  );
+  transition: all .3s;
+}
+
+.s-form-widget > .inner > .widget .button > a {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+}
+
+.s-form-widget > .inner > .widget .button > button:hover,
+.s-form-widget > .inner > .widget .button > a:hover {
+  filter: hue-rotate(45deg);
+}
+
+@media (max-width: 480px) {
+
+  .s-form-widget > .inner {
+    padding-top: 16px;
+  }
+
+}
+
+@media (max-width: 420px) {
+
+  .s-form-widget > .inner > .widget {
+    padding: 40px 32px;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .s-form-widget > .inner > .widget {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .s-form-widget > .inner > .widget .field-group .row input {
+    margin-right: 4px;
+  }
+
 }
