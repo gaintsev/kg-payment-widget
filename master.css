@@ -86,6 +86,7 @@ button::-moz-focus-inner {
 .s-form-widget > .inner > .widget .field-group select {
   display: block;
   width: 100%;
+  height: 75px;
   border: none;
   font-family: 'Mulish', Arial, Helvetica, sans-serif;
   letter-spacing: -0.02em;
@@ -119,6 +120,7 @@ button::-moz-focus-inner {
 .s-form-widget > .inner > .widget .field-group .row input {
   border-radius: 8px;
   margin-right: 8px;
+  height: auto;
   padding: 10px 16px;
   font-size: 16px;
 }
